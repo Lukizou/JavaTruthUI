@@ -88,6 +88,6 @@ public class Variables extends Container{
     Variables(AuxiliarFields auxField){
         this.varButtonCreator();
         this.varButtonVisibility();
-        this.varButtonsActions(null);
+        this.varButtonsActions(auxField.text_Line);
     }
 }

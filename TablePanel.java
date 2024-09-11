@@ -1,13 +1,12 @@
 import java.awt.*;
 public class TablePanel extends Panel{
-
+    
     TablePanel(){
         this.setBackground(Color.DARK_GRAY);
-
-        this.setLocation(50,30);
-        this.setSize(300,550);
+       
+        this.setSize(350,550);
     }
-
+    
     void addVarsButtons(Variables variablesEx){
         this.add(variablesEx.var_A_Button);
         this.add(variablesEx.var_B_Button);
@@ -28,8 +27,9 @@ public class TablePanel extends Panel{
         this.add(operandsEx.operand_Imply_Button);
         this.add(operandsEx.operand_Deny_Button);
 
-        this.add(operandsEx.parenthesis_Button);
-
+        this.add(operandsEx.parenthesis_open_Button);
+        this.add(operandsEx.parenthesis_close_Button);
+        this.add(operandsEx.delete_Button);
         this.setLayout(null);
     }
 
